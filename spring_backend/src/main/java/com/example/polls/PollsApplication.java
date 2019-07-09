@@ -13,7 +13,6 @@ import java.util.TimeZone;
 		PollsApplication.class,
 		Jsr310JpaConverters.class
 })
-
 public class PollsApplication {
 
 	@PostConstruct
@@ -24,5 +23,4 @@ public class PollsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PollsApplication.class, args);
 	}
-
 }

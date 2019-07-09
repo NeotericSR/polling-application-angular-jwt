@@ -9,6 +9,10 @@ import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Created by rajeevkumarsingh on 01/08/17.
+ */
+
 @Entity
 @Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
@@ -19,6 +23,9 @@ import java.util.Set;
         })
 })
 public class User extends DateAudit {
+
+    public static final long serialVersionUID = 1L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

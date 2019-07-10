@@ -47,6 +47,15 @@
     </nz-header>
     <nz-content>
       <div class="inner-content">
+      <button (click)="get_products()">GET /products</button>
+      <ul>
+        <li *ngFor="let product of productsObservable | async" >
+          -- id: {{product.id}}
+          -- name: {{product.name}}
+          -- cost: {{product.cost}}
+          -- quantity: {{product.quantity}}
+        </li>
+      </ul>
         <router-outlet></router-outlet>
       </div>
     </nz-content>

@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { DataService } from './data.service';
+import { DataService } from './data/data.service';
 
 import { collection } from './collection';
 
-import { Product } from './product';
-import { Family } from './family';
-import { Location } from './location';
-import { Transaction } from './transaction';
+import { Product } from './model/product';
+import { Family } from './model/family';
+import { Location } from './model/location';
+import { Transaction } from './model/transaction';
 
 
 @Component({
